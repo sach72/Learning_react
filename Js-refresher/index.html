@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict";
+        let a = 24;
+        console.log(a);
+        function fun(){
+            console.log("Hello sachin bhai!");
+        }
+        let obj1 ={
+            r:43,
+            s:"radhe",
+            func:function myfun(n) {
+                console.log("The number is " + n);
+            }
+        }
+        addEventListener("click",function(){
+            // alert("Hello you have clicked");
+            let con = confirm("are you sure?");
+            console.log(con);
+        })
+        let obj2 ={
+            funct : (number)=>{
+                console.log("the number is "+this);
+            }
+        }
+        obj2.funct();
+        //call back functions:---->
+        setTimeout(() => {
+            console.log("I will be there after 5 seconds");
+        }, 5000);
+        console.log("I am before 5 seconds");
+    </script>
+</head>
+<body>
+    <h1>I am learning javascript</h1>
+</body>
+</html>
